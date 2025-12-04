@@ -11,20 +11,38 @@
     </header>
 
     <main>
-      <form action="/us" style="width: max-content;">
+      <form action="/contact-us" style="width: max-content">
         <fieldset>
           <legend>ข้อมูลส่วนตัว</legend>
           <label for="fname">ชื่อ : </label>
-          <input type="text" name="fname" id="fname" />
+          <input type="text" name="fname" id="fname" required />
           <label for="lname">นามสกุล : </label>
-          <input type="text" name="lname" id="lname" />
-          <br>
+          <input type="text" name="lname" id="lname" required />
+          <br />
+          <br />
           <label for="email">อีเมล : </label>
-          <input type="email" name="email" id="email" />
-          <legend for="text-us">ข้อความติดต่อ : </legend>
-          <textarea name="text-us" id="text-us" rows="4" cols="45"></textarea>
+          <input type="email" name="email" id="email" required />
+          <label for="gender">เพศ : </label>
+          <input type="radio" name="gender" id="male" />ชาย
+          <input type="radio" name="gender" id="female" />หญิง
+          <input type="radio" name="gender" id="other" />อื่นๆ
+          <br />
+          <br />
+          <legend for="text-us">สิ่งที่ต้องการแจ้ง :</legend>
+          <textarea name="text-us" id="text-us" rows="7" cols="45"></textarea>
+          <br>
+           <input type="checkbox" name="accepted" id="accepted" required>ยืนยันข้อมูล
         </fieldset>
+        <input type="submit" value="เสร็จสิ้น">
+        <input type="reset" value="ยกเลิก">
       </form>
+
+      <section id="location">
+        <h2>ที่ตั้งบริษัท</h2>
+        <p>ที่อยู่ : 235 ตำบล บางพระ อำเภอศรีราชา ชลบุรี 20110</p>
+        <p>เบอร์โทร : 012-345-6789</p>
+        <p>อีเมล : MonkeyBook@go.to.zoo.com</p>
+      </section>
     </main>
   </body>
 </html>
