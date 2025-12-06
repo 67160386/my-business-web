@@ -1,21 +1,29 @@
-# สัปดาห์ที่ 2 - Create a Café Amazon website
-## ไฟล์ที่สร้าง
+# Create a Café Amazon website
+## Projecet description
+- นี่คือการจำลองหน้าเว็บไซต์ Café Amazon เบื้องต้น
+- สร้างขึ้นเพื่อเรียนรู้เกี่ยวกับวิธีสร้างหน้าเว็บไซต์
+- เพื่อศึกษาเกี่ยวกับ HTML เบื้องต้น
+- ไม่มีการใช้ CSS หรือ JavaScript
+## File structure
 - **index.html** - Homepage for Cafe Amazon website
 - **about.html** - About for Cafe Amazon website
 - **services.html** - Services for Cafe Amazon website
 - **contact.html** - Contact for Cafe Amazon website
 - **images** - Images for use in Cafe Amazon website
 - **README.md** - Project documentation
-## เรียนรู้
-- HTML5 structure
-- Semantic tags
-- Forms & attributes
-## Git Commits
-1. HTML-only website
-2. Summary: Week 2 complete
-## How to Run
-1. เปิด index.html in browser
-2. หรือเปิดด้วย Live Server in VS Code
-## Next Steps
-- Week 3: CSS Flexbox Layouts
-- Week 4: Responsive & Framework
+## All screenshots and links to each page
+1. [คลิกเพื่อดูหน้าหลัก /index.html](/index.html)
+
+[![คลิกเพื่อดูหน้าหลัก](images/logo-title.jpg)](/index.html)
+
+2. [คลิกเพื่อดูเกี่ยวกับ /about.html](/about.html)
+
+[![คลิกเพื่อดูเกี่ยวกับ](images/logo.jpg)](/about.html)
+
+3. [คลิกเพื่อดูบริการ /services.html](/services.html)
+
+[![คลิกเพื่อดูบริการ](images/circle1.jpg)](/services.html)
+
+4. [คลิกเพื่อดูติดต่อ /contact.html](/contact.html)
+
+[![คลิกเพื่อดูติดต่อ](images/contact.jpg)](/contact.html)
