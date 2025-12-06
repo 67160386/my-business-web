@@ -5,7 +5,7 @@
 - เพื่อศึกษาเกี่ยวกับ HTML เบื้องต้น
 - ไม่มีการใช้ CSS หรือ JavaScript
 ## File structure
-- **index.html** - Homepage for Cafe Amazon website
+- **index.html** - Home page for Cafe Amazon website
 - **about.html** - About for Cafe Amazon website
 - **services.html** - Services for Cafe Amazon website
 - **contact.html** - Contact for Cafe Amazon website
