@@ -14,16 +14,16 @@
 ## All screenshots and links to each page
 1. [คลิกเพื่อดูหน้าหลัก /index.html](/index.html)
 
-[![คลิกเพื่อดูหน้าหลัก](images/logo-title.jpg)](/index.html)
+[![คลิกเพื่อดูหน้าหลัก](images/index-screenshot.png)](/index.html)
 
 2. [คลิกเพื่อดูเกี่ยวกับ /about.html](/about.html)
 
-[![คลิกเพื่อดูเกี่ยวกับ](images/logo.jpg)](/about.html)
+[![คลิกเพื่อดูเกี่ยวกับ](images/about-screenshot.png)](/about.html)
 
 3. [คลิกเพื่อดูบริการ /services.html](/services.html)
 
-[![คลิกเพื่อดูบริการ](images/circle1.jpg)](/services.html)
+[![คลิกเพื่อดูบริการ](images/services-screenshot.png)](/services.html)
 
 4. [คลิกเพื่อดูติดต่อ /contact.html](/contact.html)
 
-[![คลิกเพื่อดูติดต่อ](images/contact.jpg)](/contact.html)
+[![คลิกเพื่อดูติดต่อ](images/contact-screenshot.png)](/contact.html)
