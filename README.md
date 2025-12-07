@@ -1,16 +1,16 @@
 # Create a Café Amazon website
 ## Projecet description
-- นี่คือการจำลองหน้าเว็บไซต์ Café Amazon เบื้องต้น
+- นี่คือการจำลองหน้าเว็บไซต์ Café Amazon 
 - สร้างขึ้นเพื่อเรียนรู้เกี่ยวกับวิธีสร้างหน้าเว็บไซต์
 - เพื่อศึกษาเกี่ยวกับ HTML เบื้องต้น
-- ไม่มีการใช้ CSS หรือ JavaScript
+- ไม่มีการใช้ CSS และ JavaScript
 ## File structure
-- **index.html** - Home page for Cafe Amazon website
-- **about.html** - About for Cafe Amazon website
-- **services.html** - Services for Cafe Amazon website
-- **contact.html** - Contact for Cafe Amazon website
-- **images** - Images for use in Cafe Amazon website
-- **README.md** - Project documentation
+- **index.html** - หน้าหลักสำหรับเว็บไซต์
+- **about.html** - หน้าเกี่ยวกับ อธิบายเรื่องราว และเป้าหมายของบริษัท
+- **services.html** - หน้าบริการ บอกรายละเอียดเกี่ยวกับการบริการของเรา
+- **contact.html** - หน้าติดต่อ บอกสถานที่ตั้งบริษัท และใช้สำหรับพูดคุยกับเรา
+- **images** - ใช้สำหรับการนำภาพไปใช้งานในหน้าเว็บไซต์
+- **README.md** - เอกสารสำหรับอธิบายเว็บไซต์
 ## All screenshots and links to each page
 1. [คลิกเพื่อดูหน้าหลัก /index.html](/index.html)
 
