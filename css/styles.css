@@ -7,7 +7,7 @@
  RESET & DEFAULTS
  ======================== */
 
-    /* Universal Selector & Reset */
+/* Universal Selector & Reset */
 
 * {
     margin: 0;
@@ -19,7 +19,7 @@
  TYPOGRAPHY
  ======================== */
 
-    /* Element Selectors */
+/* Element Selectors */
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -73,7 +73,7 @@ img {
  LAYOUT & CONTAINERS
  ======================== */
 
-    /* Class Selectors */
+/* Class Selectors */
 
 .hero {
     display: flex;
@@ -120,24 +120,39 @@ img {
     position: relative;
 }
 
-    /* ID Selector */
+.back-to-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
 
-#header {
+    .container {
 
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 6rem;
+            height: 2rem;
+        }
+    }
 }
 
-#footer {
+/* ID Selector */
 
-}
+#header {}
 
-    /* Pseudo-class */
+#footer {}
+
+/* Pseudo-class */
 
 a:hover {
     color: darkolivegreen;
     text-decoration: underline;
 }
 
-menu:hover, button:hover, .card:hover {
+menu:hover,
+button:hover,
+.card:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
 }
@@ -151,8 +166,8 @@ li:first-child {
     margin-top: 1rem;
 }
 
-li:last-child { 
-    margin-bottom: 1rem; 
+li:last-child {
+    margin-bottom: 1rem;
 }
 
 li:nth-child(odd) {
@@ -166,7 +181,7 @@ li:nth-child(odd) {
 header {
     text-transform: uppercase;
     border-bottom: 2px solid black;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 0;
 }
@@ -186,5 +201,3 @@ footer {
 /* ========================
  RESPONSIVE / MEDIA QUERIES
  ======================== */
-
-
