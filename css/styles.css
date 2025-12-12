@@ -129,11 +129,23 @@ img {
     .container {
 
         button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 6rem;
-            height: 2rem;
+            border: none;
+
+            .btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 7rem;
+                height: 3rem;
+                background-color: #B0CE88;
+                color: #043915;
+                border: 2px solid white;
+            }
+
+            .btn:hover {
+                background-color: #043915;
+                color: #ddd;
+            }
         }
     }
 }
@@ -189,6 +201,12 @@ li:last-child {
 
 li:nth-child(odd) {
     background-color: gainsboro;
+}
+
+.btn:hover {
+    background-color: #043915;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* ========================
