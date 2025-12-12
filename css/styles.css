@@ -2,7 +2,7 @@
  RESET & DEFAULTS
  ======================== */
 
- * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,6 +10,63 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
+    line-height: 1.8;
     background-color: white;
 }
+
+/* ========================
+ TYPOGRAPHY
+ ======================== */
+
+h1 {
+    color: black;
+    font-size: 32px;
+}
+
+h2 {
+    color: darkgreen;
+    font-size: 24px;
+}
+
+h3 {
+    color: dimgray;
+    font-size: 19px;
+}
+
+h4 {
+    color: grey;
+    font-size: 16px;
+}
+
+p {
+    line-height: 1.8;
+}
+
+a {
+    color: darkolivegreen;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+/* ========================
+ LAYOUT & CONTAINERS
+ ======================== */
+
+
+
+/* ========================
+ COMPONENTS (HEADER, NAV, CARD, etc.)
+ ======================== */
+
+
+
+/* ========================
+ RESPONSIVE / MEDIA QUERIES
+ ======================== */
+
+
+ 
