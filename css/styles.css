@@ -144,7 +144,7 @@ img {
 }
 
 .team-member {
-    display: flex;
+    display: grid;
     transition: all 0.3s ease;
     width: 30%;
     padding: 20px;
@@ -218,6 +218,10 @@ footer {
     background-color: #043915;
 }
 
+form {
+    display: flex;
+    /* flex-direction: column; */
+}
 
 /* ========================
  RESPONSIVE / MEDIA QUERIES
