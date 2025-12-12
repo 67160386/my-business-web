@@ -81,6 +81,9 @@ img {
     justify-content: center;
     height: 100vh;
     font-size: 5vw;
+    /* text-transform: uppercase; */
+    /* letter-spacing: 1px; */
+    /* text-shadow: 2px 2px 4px greenyellow; */
 }
 
 .card {
