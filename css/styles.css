@@ -172,6 +172,12 @@ nav {
     margin: 1rem;
 }
 
+footer {
+    padding: 30px 20px;
+    margin-top: 1rem;
+    background-color: #043915;
+}
+
 
 /* ========================
  RESPONSIVE / MEDIA QUERIES
