@@ -6,7 +6,7 @@
     <title>Café Amazon</title>
     <meta name="description" content="อเมซอน กาแฟที่แฟร์ กับคนทั้งโลก" />
     <link rel="icon" type="image/png" href="images/logo-title.jpg" />
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header id="main">
@@ -53,9 +53,19 @@
       <!-- Featured services -->
       <section id="featured">
         <h2>ร่วมสร้างความแฟร์ให้โลกนี้ ไปกับเรา</h2>
-        <button><a href="services.html#product">ผลิตภัณฑ์</a></button>
+        <button class="btn">
+          <a href="services.html#product">ผลิตภัณฑ์</a>
+        </button>
         <button><a href="services.html#banquet">งานจัดเลี้ยง</a></button>
         <button><a href="services.html#่join-us">ร่วมธุรกิจกับเรา</a></button>
+      </section>
+
+      <section class="back-to-top">
+        <div class="container">
+          <button>
+            <a href="#main" class="btn">Back to Top</a>
+          </button>
+        </div>
       </section>
     </main>
 
@@ -68,3 +78,11 @@
     </footer>
   </body>
 </html>
+
+<!-- 3-Column Services Layout
+
+<div class="services">
+  <div class="service-card">Service 1</div>
+  <div class="service-card">Service 2</div>
+  <div class="service-card">Service 3</div>
+</div> -->
