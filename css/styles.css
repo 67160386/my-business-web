@@ -72,22 +72,31 @@ a:hover {
     display: flex;
     padding: 1rem;
     border: 1px solid black;
-    box-shadow: 0 2px 8px rgb(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
 }
 
 .btn {
-    display: flex;
+    display: inline-flex;
     padding: 1rem;
     transition: all 0.3s ease;
 }
 
-.btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 2px 8px rgb(0, 0, 0, 0.1);
-}
-
 .section {
     margin: 1rem;
+}
+
+menu {
+    transition: all 0.3s ease;
+}
+
+button {
+    transition: all 0.3s ease;
+}
+
+menu {
+    transition: all 0.3s ease;
 }
 
     /* ID Selector */
@@ -99,6 +108,31 @@ a:hover {
 #footer {
 
 }
+
+    /* Pseudo-class */
+
+menu:hover, button:hover, .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+}
+
+button:active {
+    transform: translateY(0px);
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1);
+}
+
+li:first-child {
+    margin-top: 1rem;
+}
+
+li:last-child { 
+    margin-bottom: 1rem; 
+}
+
+li:nth-child(odd) {
+    background-color: gainsboro;
+}
+
 
 /* ========================
  COMPONENTS (HEADER, NAV, CARD, etc.)
