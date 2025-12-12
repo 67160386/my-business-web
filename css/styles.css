@@ -164,7 +164,10 @@ li:nth-child(odd) {
 
 header {
     text-transform: uppercase;
-    border-bottom: 2px solid black
+    border-bottom: 2px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 0;
 }
 
 nav {
