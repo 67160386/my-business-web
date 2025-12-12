@@ -139,6 +139,11 @@ img {
     }
 }
 
+.service-card {
+    flex: 1;
+    min-width: 300px;
+}
+
 /* ID Selector */
 
 #header {}
