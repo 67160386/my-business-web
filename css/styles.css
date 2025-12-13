@@ -90,7 +90,11 @@ img {
     padding: 60px 20px;
     color: white;
     font-size: 2rem;
-    background-image: linear-gradient(#043915, #B0CE88);
+    background-image: url(../images/coffee-cup-bg.png);
+    /* background-color: #B0CE88; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: top;
 }
 
 .card {
@@ -222,11 +226,9 @@ img {
 
     .hero {
         position: relative;
-        background-image: linear-gradient(white);
         height: 600px;
 
         .container {
-            width: 100%;
             display: flex;
             justify-content: center;
 
@@ -267,6 +269,7 @@ img {
                 }
 
                 .hero-img-cup {
+                    position: relative;
                     display: flex;
                     justify-content: center;
 
@@ -295,13 +298,12 @@ img {
                     .container {
 
                         .hero-box-famer {
-                            width: 15rem;
 
                             .hero-text-famer {
                                 text-align: right;
                                 box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
                                 padding-right: 2.5rem;
-                                /* width: 17rem; */
+                                width: 16rem;
                                 background-color: white;
 
                                 h2 {
@@ -409,9 +411,9 @@ img {
                         .hero-box-everyone {
 
                             .hero-text-everyone {
-                                text-align: left;
+                                text-align: right;
                                 box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
-                                padding-left: 3rem;
+                                padding-right: 3rem;
                                 width: 16rem;
                                 background-color: white;
 
@@ -425,8 +427,8 @@ img {
 
                     .hero-img-everyone {
                         position: relative;
-                        right: 2rem;
-                        bottom: 1rem;
+                        right: 2.5rem;
+                        bottom: 2rem;
 
                         img {
                             width: 60%;
@@ -523,6 +525,189 @@ form {
  RESPONSIVE / MEDIA QUERIES
  ======================== */
 
+
+/* -------------------------- max-width: 780px ------------------------ */
+
+@media screen and (max-width: 780px) {
+
+    #hero-section {
+
+        .hero {
+            height: 400px;
+
+            .container {
+
+                .hero-img-box {
+
+                    .hero-wrapper-text {
+                        top: 30%;
+
+                        .container {
+
+                            .hero-text {
+                                h1 {
+                                    span {
+                                        font-size: 1.4rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .hero-img-smoke {
+                        top: -1%;
+                    }
+
+                    .hero-img-cup {
+                        bottom: 3%;
+
+                        img {}
+                    }
+
+                    .hero-img-shadow {
+                        bottom: 7.5%;
+
+                        img {}
+                    }
+
+                    .hero-wrapper-farmer {
+                        top: 25%;
+                        right: 48%;
+
+                        .container {
+
+                            .hero-box-famer {
+
+                                .hero-text-famer {
+                                    width: 12rem;
+
+                                    h2 {
+                                        font-size: 1rem;
+                                    }
+
+                                    p {
+                                        font-size: 0.7rem;
+                                    }
+                                }
+
+                            }
+                        }
+
+                        .hero-img-famer {
+                            right: 2rem;
+                            top: 1rem;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .hero-wrapper-nature {
+                        top: 10%;
+                        left: 65%;
+
+                        .container {
+
+                            .hero-box-nature {
+
+                                .hero-text-nature {
+                                    width: 12rem;
+
+                                    h2 {
+                                        font-size: 1rem;
+                                    }
+
+                                    p {
+                                        font-size: 0.7rem;
+                                    }
+                                }
+                            }
+                        }
+
+                        .hero-img-nature {
+                            right: 13rem;
+                            top: 2rem;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .hero-wrapper-planet {
+                        bottom: 20%;
+                        left: 67%;
+
+                        .container {
+
+                            .hero-box-planet {
+
+                                .hero-text-planet {
+                                    width: 12rem;
+
+                                    h2 {
+                                        font-size: 1rem;
+                                    }
+
+                                    p {
+                                        font-size: 0.7rem;
+                                    }
+                                }
+
+                            }
+                        }
+
+                        .hero-img-planet {
+                            right: 13rem;
+                            bottom: 1rem;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .hero-wrapper-everyone {
+                        bottom: 35%;
+                        right: 52%;
+
+                        .container {
+
+                            .hero-box-everyone {
+
+                                .hero-text-everyone {
+                                    width: 12rem;
+
+                                    h2 {
+                                        font-size: 1rem;
+                                    }
+
+                                    p {
+                                        font-size: 0.7rem;
+                                    }
+                                }
+
+                            }
+                        }
+
+                        .hero-img-everyone {
+                            right: 2rem;
+                            bottom: 1rem;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* -------------------------- max-width: 465px ------------------------ */
+
 @media screen and (max-width: 465px) {
     .header-navigation {
 
@@ -532,7 +717,206 @@ form {
             li {
 
                 a {
-                    font-size: 0.67rem;
+                    font-size: 0.65rem;
+                }
+            }
+        }
+    }
+}
+
+/* -------------------------- max-width: 380px ------------------------ */
+
+@media screen and (max-width: 380px) {
+    .header-navigation {
+
+        ul {
+            display: inline-flex;
+
+            li {
+
+                a {
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+
+    #hero-section {
+
+        .hero {
+            height: 200px;
+
+            .container {
+                padding: 0;
+
+                .hero-img-box {
+
+                    .hero-wrapper-text {
+                        top: 27%;
+
+                        .container {
+
+                            .hero-text {
+                                h1 {
+                                    span {
+                                        font-size: 0.7rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .hero-img-smoke {
+                        top: -1%;
+                    }
+
+                    .hero-img-cup {
+                        bottom: 3%;
+
+                        img {}
+                    }
+
+                    .hero-img-shadow {
+                        bottom: 8.5%;
+
+                        img {}
+                    }
+
+                    .hero-wrapper-farmer {
+                        top: 30%;
+                        right: 41%;
+
+                        .container {
+
+                            .hero-box-famer {
+
+                                .hero-text-famer {
+                                    width: 6rem;
+                                    padding-right: 1.5rem;
+
+
+                                    h2 {
+                                        font-size: 0.4rem;
+                                    }
+
+                                    p {
+                                        font-size: 0.3rem;
+                                    }
+                                }
+
+                            }
+                        }
+
+                        .hero-img-famer {
+                            right: 1rem;
+                            top: -1rem;
+
+                            img {
+                                width: 50%;
+                            }
+                        }
+                    }
+
+                    .hero-wrapper-nature {
+                        top: 14%;
+                        left: 65%;
+
+                        .container {
+
+                            .hero-box-nature {
+
+                                .hero-text-nature {
+                                    width: 5.5rem;
+                                    padding-left: 1.5rem;
+
+                                    h2 {
+                                        font-size: 0.4rem;
+                                    }
+
+                                    p {
+                                        font-size: 0.3rem;
+                                    }
+                                }
+                            }
+                        }
+
+                        .hero-img-nature {
+                            right: 6rem;
+                            top: -0.5rem;
+
+                            img {
+                                width: 40%;
+                            }
+                        }
+                    }
+
+                    .hero-wrapper-planet {
+                        bottom: 20%;
+                        left: 70%;
+
+                        .container {
+
+                            .hero-box-planet {
+
+                                .hero-text-planet {
+                                    width: 5rem;
+                                    padding-left: 1.5rem;
+
+                                    h2 {
+                                        font-size: 0.4rem;
+                                    }
+
+                                    p {
+                                        font-size: 0.3rem;
+                                    }
+                                }
+
+                            }
+                        }
+
+                        .hero-img-planet {
+                            right: 5.5rem;
+                            bottom: 1.5rem;
+
+                            img {
+                                width: 40%;
+                            }
+                        }
+                    }
+
+                    .hero-wrapper-everyone {
+                        bottom: 31%;
+                        right: 46%;
+
+                        .container {
+
+                            .hero-box-everyone {
+
+                                .hero-text-everyone {
+                                    width: 6rem;
+                                    padding: 0 1rem;
+
+                                    h2 {
+                                        font-size: 0.4rem;
+                                    }
+
+                                    p {
+                                        font-size: 0.3rem;
+                                    }
+                                }
+
+                            }
+                        }
+
+                        .hero-img-everyone {
+                            right: 0.7rem;
+                            bottom: 1.7rem;
+
+                            img {
+                                width: 50%;
+                            }
+                        }
+                    }
                 }
             }
         }
