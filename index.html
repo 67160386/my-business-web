@@ -9,80 +9,178 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header id="main">
-      <!-- Logo -->
-      <img src="images/logo.jpg" alt="logo" width="40%" />
-
+    <header id="header">
       <!-- Navigation menu -->
-      <menu>
-        <nav>
-          <li><a href="/index.html">หน้าแรก</a></li>
-          <li><a href="/about.html">เกี่ยวกับ</a></li>
-          <li><a href="/services.html">บริการ</a></li>
-          <li><a href="/contact.html">ติดต่อ</a></li>
-        </nav>
-      </menu>
+      <section class="header-navigation">
+        <menu>
+          <nav>
+            <div class="nav-left">
+              <ul>
+                <li><a href="/index.html">หน้าแรก</a></li>
+                <li><a href="/about.html">เกี่ยวกับ</a></li>
+              </ul>
+            </div>
+
+            <div class="logo-center">
+              <div class="logo-img">
+                <a href="/index.html">
+                  <img src="images/logo.jpg" alt="logo" />
+                </a>
+              </div>
+            </div>
+
+            <div class="nav-right">
+              <ul>
+                <li><a href="/services.html">บริการ</a></li>
+                <li><a href="/contact.html">ติดต่อ</a></li>
+              </ul>
+            </div>
+          </nav>
+        </menu>
+      </section>
     </header>
 
-    <main>
+    <main id="content">
       <!-- Hero section -->
-      <section id="hero-section">
-        <article>
-          <h2>กาแฟที่แฟร์ กับคนทั้งโลก</h2>
-          <ul>
-            <li>
-              <h3>แฟร์กับเกษตรกร</h3>
-              <p>สร้างรายได้ที่มั่นคงเป็นธรรม</p>
-            </li>
-            <li>
-              <h3>แฟร์กับธรรมชาติ</h3>
-              <p>สร้างสรรค์ผลิตภัณฑ์ที่​เป็นมิตรต่อสิ่งแวดล้อม</p>
-            </li>
-            <li>
-              <h3>แฟร์กับโลกใบนี้</h3>
-              <p>สร้างคุณค่าตามแนวคิด Circular Economy</p>
-            </li>
-            <li>
-              <h3>แฟร์กับทุกคน</h3>
-              <p>สร้างอาชีพและโอกาสที่ยั่งยืน​</p>
-            </li>
-          </ul>
-        </article>
-      </section>
+      <!-- <section id="hero-section">
+        <div class="hero">
+          <div class="container">
+            <div class="hero-img-box">
+              
+              <div class="hero-wrapper-text">
+                <div class="container">
+                  <div class="hero-text">
+                    <h1>
+                      <span>กาแฟที่แฟร์</span>
+                      <span>กับคนทั้งโลก</span>
+                    </h1>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-wrapper-farmer">
+                <div class="container">
+                  <div class="hero-box-famer">
+                    <div class="hero-text-famer">
+                      <h2>แฟร์กับเกษตรกร</h2>
+                      <p>สร้างรายได้ที่มั่นคงเป็นธรรม</p>
+                    </div>
+                  </div>
+
+                  <div class="hero-img-famer">
+                    <img src="images/Fair_to_Farmer.webp" alt="fair-farmer" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-wrapper-nature">
+                <div class="container">
+                  <div class="hero-box-nature">
+                    <div class="hero-text-nature">
+                      <h2>แฟร์กับธรรมชาติ</h2>
+                      <p>สร้างสรรค์ผลิตภัณฑ์ที่​เป็นมิตรต่อสิ่งแวดล้อม</p>
+                    </div>
+                  </div>
+
+                  <div class="hero-img-nature">
+                    <img src="images/Fair_to_Nature.webp" alt="fair-farmer" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-img-smoke">
+                <img src="images/smoke-line.webp" alt="cup" />
+              </div>
+              <div class="hero-img-cup">
+                <img src="images/amazon-cup.webp" alt="cup" />
+              </div>
+              <div class="hero-img-shadow">
+                <img src="images/cup-shadow.webp" alt="cup" />
+              </div>
+
+              <div class="hero-wrapper-planet">
+                <div class="container">
+                  <div class="hero-box-planet">
+                    <div class="hero-text-planet">
+                      <h2>แฟร์กับโลกใบนี้</h2>
+                      <p>สร้างคุณค่าตามแนวคิด Circular Economy</p>
+                    </div>
+                  </div>
+
+                  <div class="hero-img-planet">
+                    <img src="images/Fair_to_Planet.webp" alt="fair-farmer" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-wrapper-everyone">
+                <div class="container">
+                  <div class="hero-box-everyone">
+                    <div class="hero-text-everyone">
+                      <h2>แฟร์กับโลกใบนี้</h2>
+                      <p>สร้างคุณค่าตามแนวคิด Circular Economy</p>
+                    </div>
+                  </div>
+
+                  <div class="hero-img-everyone">
+                    <img src="images/Fair_to_Everyone.webp" alt="fair-farmer" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <article>
+        <h2></h2>
+        <ul>
+          <li>
+            <h3>แฟร์กับเกษตรกร</h3>
+            <p>สร้างรายได้ที่มั่นคงเป็นธรรม</p>
+          </li>
+          <li>
+            <h3>แฟร์กับธรรมชาติ</h3>
+            <p>สร้างสรรค์ผลิตภัณฑ์ที่​เป็นมิตรต่อสิ่งแวดล้อม</p>
+          </li>
+          <li>
+            <h3>แฟร์กับโลกใบนี้</h3>
+            <p>สร้างคุณค่าตามแนวคิด Circular Economy</p>
+          </li>
+          <li>
+            <h3>แฟร์กับทุกคน</h3>
+            <p>สร้างอาชีพและโอกาสที่ยั่งยืน​</p>
+          </li>
+        </ul>
+      </article> -->
 
       <!-- Featured services -->
-      <section id="featured">
+      <!-- <section id="featured">
         <h2>ร่วมสร้างความแฟร์ให้โลกนี้ ไปกับเรา</h2>
         <button class="btn">
           <a href="services.html#product">ผลิตภัณฑ์</a>
         </button>
         <button><a href="services.html#banquet">งานจัดเลี้ยง</a></button>
         <button><a href="services.html#่join-us">ร่วมธุรกิจกับเรา</a></button>
-      </section>
+      </section> -->
 
-      <section class="back-to-top">
+      <!-- <section class="back-to-top">
         <div class="container">
-          <button>
-            <a href="#main" class="btn">Back to Top</a>
-          </button>
+          <div class="back-to-top-box">
+            <button>
+              <a href="#content" class="btn">Back to Top</a>
+            </button>
+          </div>
         </div>
       </section>
-    </main>
+    </main> -->
 
     <!-- Footer -->
-    <footer>
+    <!-- <footer>
       <p>
         &copy; สงวนสิทธิ์ พ.ศ. 2568 บริษัท ปตท. น้ำมันและการค้าปลีก จำกัด
         (มหาชน)
       </p>
-    </footer>
+    </footer> -->
   </body>
 </html>
-
-<!-- 3-Column Services Layout
-
-<div class="services">
-  <div class="service-card">Service 1</div>
-  <div class="service-card">Service 2</div>
-  <div class="service-card">Service 3</div>
-</div> -->
