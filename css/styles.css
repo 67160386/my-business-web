@@ -711,13 +711,12 @@ form {
 @media screen and (max-width: 465px) {
     .header-navigation {
 
-        ul {
-            display: inline-flex;
+        menu {
 
-            li {
+            nav {
 
-                a {
-                    font-size: 0.65rem;
+                li {
+                    margin: 0 0.4rem;
                 }
             }
         }
@@ -729,13 +728,15 @@ form {
 @media screen and (max-width: 380px) {
     .header-navigation {
 
-        ul {
-            display: inline-flex;
+        menu {
 
-            li {
+            nav {
 
-                a {
-                    font-size: 0.6rem;
+                li {
+
+                    a {
+                        font-size: 0.65rem;
+                    }
                 }
             }
         }
