@@ -16,6 +16,11 @@
     z-index: 1;
 }
 
+:root {
+    --darkgreen: #436152;
+    --darkyellow: rgb(151, 112, 53);
+}
+
 /* ========================
  TYPOGRAPHY
  ======================== */
@@ -55,7 +60,7 @@ p {
 }
 
 a {
-    color: darkgreen;
+    color: var(--darkgreen);
     text-decoration: none;
 }
 
@@ -127,7 +132,7 @@ img {
 }
 
 .back-to-top {
-    display: inline;
+    display: flex;
     position: fixed;
     bottom: 1rem;
     right: 1rem;
@@ -136,11 +141,14 @@ img {
 
     .container {
         padding: 0;
+        margin: 0;
 
         .back-to-top-box {
 
             button {
+                background: none;
                 border: none;
+                box-shadow: none;
 
                 .btn {
                     display: flex;
@@ -148,14 +156,17 @@ img {
                     justify-content: center;
                     width: 7rem;
                     height: 3rem;
-                    background-color: #B0CE88;
-                    color: #043915;
-                    border: 2px solid #ddd;
+                    color: var(--darkgreen);
+                    font-weight: bold;
+                    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+                    background-color: white;
+                    border-radius: 10px;
                 }
 
                 .btn:hover {
-                    background-color: #043915;
-                    color: #ddd;
+                    background-color: whitesmoke;
+                    color: darkolivegreen;
+                    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1);
                 }
             }
         }
@@ -180,6 +191,7 @@ img {
 
 .header-navigation {
     background-color: white;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
 
     menu {
         display: flex;
@@ -473,17 +485,15 @@ li:nth-child() {
     background-color: gainsboro;
 }
 
+header:hover {
+    transform: translateY(-2px);
+}
+
 .btn:hover {
     background-color: #043915;
-
 }
 
 .back-to-top:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-header:hover {
     transform: translateY(-2px);
 }
 
@@ -526,7 +536,7 @@ form {
  ======================== */
 
 
-/* -------------------------- max-width: 780px ------------------------ */
+/* -------------------------- max-width: 780px ------------------------------------------------------------------------ */
 
 @media screen and (max-width: 780px) {
 
@@ -560,14 +570,10 @@ form {
 
                     .hero-img-cup {
                         bottom: 3%;
-
-                        img {}
                     }
 
                     .hero-img-shadow {
                         bottom: 7.5%;
-
-                        img {}
                     }
 
                     .hero-wrapper-farmer {
@@ -706,7 +712,7 @@ form {
     }
 }
 
-/* -------------------------- max-width: 465px ------------------------ */
+/* -------------------------- max-width: 465px ------------------------------------------------------------------------ */
 
 @media screen and (max-width: 465px) {
     .header-navigation {
@@ -723,7 +729,7 @@ form {
     }
 }
 
-/* -------------------------- max-width: 380px ------------------------ */
+/* -------------------------- max-width: 380px ------------------------------------------------------------------------ */
 
 @media screen and (max-width: 380px) {
     .header-navigation {
