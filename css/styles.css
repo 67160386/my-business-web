@@ -18,6 +18,7 @@
 
 :root {
     --darkgreen: #436152;
+    --darkergreen: rgb(43, 70, 53);
     --darkyellow: rgb(151, 112, 53);
 }
 
@@ -34,27 +35,27 @@ body {
 }
 
 h1 {
-    color: black;
-    font-size: 32px;
+    color: var(--darkgreen);
+    font-size: 2rem;
 }
 
 h2 {
     color: rgb(151, 112, 53);
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 h3 {
     color: dimgray;
-    font-size: 19px;
+    font-size: 1.17rem;
 }
 
 h4 {
     color: grey;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 p {
-    color: rgb(24, 29, 39);
+    color: black;
     line-height: 1.8;
     font-size: 1rem;
 }
@@ -321,6 +322,10 @@ img {
                                 h2 {
                                     font-weight: 400;
                                 }
+
+                                p {
+                                    color: rgb(24, 29, 39);
+                                }
                             }
 
                         }
@@ -357,6 +362,10 @@ img {
 
                                 h2 {
                                     font-weight: 400;
+                                }
+
+                                p {
+                                    color: rgb(24, 29, 39);
                                 }
                             }
 
@@ -395,6 +404,10 @@ img {
                                 h2 {
                                     font-weight: 400;
                                 }
+
+                                p {
+                                    color: rgb(24, 29, 39);
+                                }
                             }
 
                         }
@@ -431,6 +444,10 @@ img {
 
                                 h2 {
                                     font-weight: 400;
+                                }
+
+                                p {
+                                    color: rgb(24, 29, 39);
                                 }
                             }
 
@@ -632,7 +649,7 @@ nav {
 footer {
     padding: 30px 20px;
     margin-top: 1rem;
-    background-color: #043915;
+    background-color: var(--darkergreen);
 }
 
 form {
