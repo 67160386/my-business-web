@@ -18,8 +18,15 @@
 
 :root {
     --darkgreen: #436152;
-    --darkergreen: rgb(43, 70, 53);
+    /* primary */
     --darkyellow: rgb(151, 112, 53);
+    /* secondary */
+    --darkergreen: rgb(43, 70, 53);
+    /* accent */
+    --softwhite: rgb(255, 255, 255);
+    /* neutral */
+    --softgray: rgb(244, 242, 241, );
+    --darker: rgb(38, 53, 46);
 }
 
 /* ========================
@@ -50,7 +57,7 @@ h3 {
 }
 
 h4 {
-    color: grey;
+    color: white;
     font-size: 1rem;
 }
 
@@ -58,6 +65,10 @@ p {
     color: black;
     line-height: 1.8;
     font-size: 1rem;
+}
+
+span {
+    color: var(--softwhite);
 }
 
 a {
@@ -94,7 +105,6 @@ img {
     /* letter-spacing: 1px; */
     /* text-shadow: 2px 2px 4px greenyellow; */
     padding: 60px 20px;
-    color: white;
     font-size: 2rem;
     background-image: url(../images/coffee-cup-bg.png);
     /* background-color: #B0CE88; */
@@ -231,7 +241,16 @@ img {
 
 /* ID Selector */
 
-#header {}
+#header {
+    margin: 0 auto;
+    padding: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--darkergreen);
+    font-size: 2rem;
+    font-weight: 400;
+}
 
 #footer {}
 
@@ -251,7 +270,7 @@ img {
 
                 .hero-wrapper-text {
                     position: relative;
-                    top: 30%;
+                    top: 26rem;
                     display: flex;
                     justify-content: center;
 
@@ -274,7 +293,7 @@ img {
                     display: flex;
                     justify-content: center;
                     position: relative;
-                    top: 3rem;
+                    top: 2rem;
 
                     img {
                         width: 10%;
@@ -285,6 +304,7 @@ img {
                     position: relative;
                     display: flex;
                     justify-content: center;
+                    bottom: 2rem;
 
                     img {
                         width: 40%;
@@ -295,7 +315,7 @@ img {
                     display: flex;
                     justify-content: center;
                     position: relative;
-                    bottom: 5.7rem;
+                    bottom: 7.5rem;
                     z-index: 0;
 
                     img {
@@ -305,7 +325,7 @@ img {
 
                 .hero-wrapper-farmer {
                     position: relative;
-                    top: 27%;
+                    top: 26%;
                     right: 35%;
 
                     .container {
@@ -346,7 +366,7 @@ img {
 
                 .hero-wrapper-nature {
                     position: relative;
-                    top: 15%;
+                    top: 14%;
                     left: 60%;
 
                     .container {
@@ -387,8 +407,8 @@ img {
 
                 .hero-wrapper-planet {
                     position: relative;
-                    bottom: 17%;
-                    left: 60%;
+                    bottom: 19%;
+                    left: 57%;
 
                     .container {
 
@@ -429,7 +449,7 @@ img {
                 .hero-wrapper-everyone {
                     position: relative;
                     bottom: 35%;
-                    right: 40%;
+                    right: 37%;
 
                     .container {
 
@@ -477,6 +497,7 @@ img {
     background-size: contain;
     height: 400px;
     background-color: rgb(248, 249, 248);
+
 
     .container {
 
@@ -571,6 +592,48 @@ img {
 
                         a {
                             color: var(--darkyellow);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.services {
+
+    .service-card {
+
+        #product-section {
+
+            .container {
+
+                .product-header-text {
+
+                    h3 {
+                        color: var(--softwhite);
+                        background-color: var(--darkgreen);
+                        padding: 0.5rem 1rem;
+                        margin: 1rem 0;
+                    }
+                }
+
+                .product-wrapper {
+                    display: inline-flex;
+
+                    .product-box {
+
+                        .drink-img {
+                            display: flex;
+                            justify-content: center;
+
+                            img {
+                                width: 90%;
+                            }
+                        }
+
+                        .drink-text {
+                            text-align: center;
                         }
                     }
                 }
@@ -1056,6 +1119,7 @@ form {
     }
 
     #featured-section {
+        height: auto;
 
         .container {
 
@@ -1155,5 +1219,14 @@ form {
                 }
             }
         }
+    }
+
+
+    span {
+        font-size: 0.5rem;
+    }
+
+    footer {
+        padding: 10px 20px;
     }
 }
