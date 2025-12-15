@@ -52,8 +52,10 @@ h2 {
 }
 
 h3 {
-    color: dimgray;
-    font-size: 1.17rem;
+    color: var(--softwhite);
+    background-color: var(--darkgreen);
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
 }
 
 h4 {
@@ -608,16 +610,6 @@ img {
 
             .container {
 
-                .product-header-text {
-
-                    h3 {
-                        color: var(--softwhite);
-                        background-color: var(--darkgreen);
-                        padding: 0.5rem 1rem;
-                        margin: 1rem 0;
-                    }
-                }
-
                 .product-wrapper {
                     display: inline-flex;
 
@@ -647,22 +639,53 @@ img {
 
             .container {
 
-                .banquet-header-text {
-
-                    h3 {
-                        margin: 1rem 0;
-                        padding: 0.5rem 1rem;
-                        text-align: center;
-                        color: var(--softwhite);
-                        background-color: var(--darkgreen);
-                    }
-                }
-
                 .banquet-wrapper {
                     display: inline-flex;
+                }
+            }
+        }
+    }
 
-                    .banquet-box {
-                        
+    .service-card {
+
+        #join-us-section {
+
+            .container {
+
+                .join-us-wrapper {
+                    display: inline-flex;
+
+                    .join-us-box {
+
+                        .join-us-img {
+
+                            .circle-box {
+                                display: flex;
+                                flex-direction: column;
+
+                                img {
+                                    width: 80%;
+                                    border-radius: 50%;
+                                    margin-left: 27px;
+                                }
+
+                                .circle-text {
+                                    display: flex;
+                                    justify-content: center;
+                                    position: relative;
+                                    bottom: 8.7rem;
+                                    /* left: 2.5rem; */
+                                    strong {
+                                        color: var(--softwhite);
+                                        font-size: 1.7rem;
+                                    }
+                                }
+                            }
+                        }
+
+                        .join-us-text {
+                            text-align: center;
+                        }
                     }
                 }
             }
