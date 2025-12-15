@@ -640,6 +640,34 @@ img {
             }
         }
     }
+
+    .service-card {
+
+        #banquet-section {
+
+            .container {
+
+                .banquet-header-text {
+
+                    h3 {
+                        margin: 1rem 0;
+                        padding: 0.5rem 1rem;
+                        text-align: center;
+                        color: var(--softwhite);
+                        background-color: var(--darkgreen);
+                    }
+                }
+
+                .banquet-wrapper {
+                    display: inline-flex;
+
+                    .banquet-box {
+                        
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* Pseudo-class */
