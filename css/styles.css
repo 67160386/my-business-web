@@ -25,7 +25,7 @@
     /* accent */
     --softwhite: rgb(255, 255, 255);
     /* neutral */
-    --softgray: rgb(244, 242, 241, );
+    --softgray: rgb(244, 242, 241);
     --darker: rgb(38, 53, 46);
 }
 
@@ -238,6 +238,29 @@ img {
 
     menu:hover {
         transform: translateY(0);
+    }
+}
+
+#promotion-section {
+
+    .container {
+
+        table {
+            border: 1px solid black;
+            width: 100%;
+            height: 150px;
+            text-align: center;
+
+            thead th {
+                background-color: var(--darkyellow);
+                color: var(--softwhite);
+                height: 50px;
+            }
+
+            tbody td {
+                background-color: var(--softgray);
+            }
+        }
     }
 }
 
@@ -523,6 +546,7 @@ img {
                 display: inline-flex;
                 width: 10rem;
 
+
                 .product-btn {
 
                     .product-btn-img {
@@ -661,7 +685,7 @@ img {
 
                             .circle-box {
                                 display: flex;
-                                flex-direction: column;
+                                position: relative;
 
                                 img {
                                     width: 80%;
@@ -671,13 +695,14 @@ img {
 
                                 .circle-text {
                                     display: flex;
-                                    justify-content: center;
-                                    position: relative;
-                                    bottom: 8.7rem;
-                                    /* left: 2.5rem; */
+                                    position: absolute;
+                                    bottom: 42%;
+                                    left: 20%;
+
                                     strong {
                                         color: var(--softwhite);
-                                        font-size: 1.7rem;
+                                        font-size: clamp(0.8rem, 1.875vw, 1.5rem);
+                                        padding-left: 5px;
                                     }
                                 }
                             }
@@ -685,6 +710,7 @@ img {
 
                         .join-us-text {
                             text-align: center;
+                            margin-top: 1rem;
                         }
                     }
                 }
@@ -952,6 +978,23 @@ form {
     }
 }
 
+/* -------------------------- max-width: 768px ------------------------------------------------------------------------ */
+
+@media screen and (max-width: 768px) {}
+
+/* -------------------------- max-width: 480px ------------------------------------------------------------------------ */
+
+@media screen and (max-width: 480px) {
+
+    .product-wrapper {
+        flex-direction: column;
+
+        .drink-img {
+            width: 50%;
+        }
+    }
+}
+
 /* -------------------------- max-width: 465px ------------------------------------------------------------------------ */
 
 @media screen and (max-width: 465px) {
@@ -969,9 +1012,9 @@ form {
     }
 }
 
-/* -------------------------- max-width: 380px ------------------------------------------------------------------------ */
+/* -------------------------- max-width: 376px ------------------------------------------------------------------------ */
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 376px) {
     .header-navigation {
 
         menu {
@@ -981,7 +1024,7 @@ form {
                 li {
 
                     a {
-                        font-size: 0.65rem;
+                        font-size: 0.8rem;
                     }
                 }
             }
@@ -1006,7 +1049,7 @@ form {
                             .hero-text {
                                 h1 {
                                     span {
-                                        font-size: 0.7rem;
+                                        font-size: 0.8rem;
                                     }
                                 }
                             }
@@ -1043,11 +1086,11 @@ form {
 
 
                                     h2 {
-                                        font-size: 0.4rem;
+                                        font-size: 0.5rem;
                                     }
 
                                     p {
-                                        font-size: 0.3rem;
+                                        font-size: 0.4rem;
                                     }
                                 }
 
@@ -1273,11 +1316,54 @@ form {
     }
 
 
+    #header span {
+        font-size: 1.5rem;
+    }
+
     span {
         font-size: 0.5rem;
     }
 
     footer {
         padding: 10px 20px;
+    }
+}
+
+#product-section {
+
+    .product-box {
+        display: flex;
+        position: relative;
+        margin-top: 5px;
+
+        .drink-text {
+            position: absolute;
+            top: 30px;
+            left: 190px;
+        }
+    }
+}
+
+#banquet-section {
+
+    .banquet-wrapper {
+        flex-direction: column;
+    }
+}
+
+#join-us-section {
+
+    .join-us-wrapper {
+        flex-direction: column;
+
+        .circle-box {
+            width: 50%;
+            border-radius: 50%;
+            margin-left: 70px;
+
+            .circle-text {
+                padding-left: 8px;
+            }
+        }
     }
 }
