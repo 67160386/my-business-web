@@ -702,7 +702,6 @@ img {
                                     strong {
                                         color: var(--softwhite);
                                         font-size: clamp(0.8rem, 1.875vw, 1.5rem);
-                                        padding-left: 5px;
                                     }
                                 }
                             }
@@ -1327,42 +1326,42 @@ form {
     footer {
         padding: 10px 20px;
     }
-}
 
-#product-section {
+    #product-section {
 
-    .product-box {
-        display: flex;
-        position: relative;
-        margin-top: 5px;
+        .product-box {
+            display: flex;
+            position: relative;
+            margin-top: 5px;
 
-        .drink-text {
-            position: absolute;
-            top: 30px;
-            left: 190px;
+            .drink-text {
+                position: absolute;
+                top: 30px;
+                left: 190px;
+            }
         }
     }
-}
 
-#banquet-section {
+    #banquet-section {
 
-    .banquet-wrapper {
-        flex-direction: column;
+        .banquet-wrapper {
+            flex-direction: column;
+        }
     }
-}
 
-#join-us-section {
+    #join-us-section {
 
-    .join-us-wrapper {
-        flex-direction: column;
+        .join-us-wrapper {
+            flex-direction: column;
 
-        .circle-box {
-            width: 50%;
-            border-radius: 50%;
-            margin-left: 70px;
+            .circle-box {
+                width: 50%;
+                border-radius: 50%;
+                margin-left: 70px;
 
-            .circle-text {
-                padding-left: 8px;
+                .circle-text {
+                    padding-left: 8px;
+                }
             }
         }
     }
