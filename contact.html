@@ -9,21 +9,21 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header id="contact">
+    <header>
       <!-- Navigation menu -->
       <section class="header-navigation">
         <menu>
           <nav>
             <div class="nav-left">
               <ul>
-                <li><a href="/index.html">หน้าแรก</a></li>
-                <li><a href="/about.html">เกี่ยวกับ</a></li>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="about.html">เกี่ยวกับ</a></li>
               </ul>
             </div>
 
             <div class="logo-center">
               <div class="logo-img">
-                <a href="/index.html">
+                <a href="index.html">
                   <img src="images/logo.jpg" alt="logo" width="50px" />
                 </a>
               </div>
@@ -31,8 +31,8 @@
 
             <div class="nav-right">
               <ul>
-                <li><a href="/services.html">บริการ</a></li>
-                <li><a href="/contact.html">ติดต่อ</a></li>
+                <li><a href="services.html">บริการ</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
               </ul>
             </div>
           </nav>
@@ -41,126 +41,162 @@
     </header>
 
     <main>
-      <h1>ติดต่อเรา</h1>
-      <img src="images/contact.jpg" alt="contact" width="50%" />
-      <p><strong>บริษัท ปตท. น้ำมันและการค้าปลีก จำกัด (มหาชน)</strong></p>
-      <p>
-        ธุรกิจคาเฟ่อเมซอน 555/2 ศูนย์เอนเนอร์ยี่คอมเพล็กซ์ อาคารบี ชั้นที่ 12
-      </p>
-      <p>ถนนวิภาวดีรังสิต แขวงจตุจักร เขตจตุจักร กรุงเทพฯ 10900</p>
-      <p>เลขประจำตัวผู้เสียภาษี : 0107561000013</p>
-      <p><strong>แนะนำสินค้าและบริการ</strong></p>
-      <p>Contact Center</p>
-      <p><strong>1365</strong></p>
-      <br />
+      <section>
+        <div id="header">
+          <span>ติดต่อเรา</span>
+        </div>
 
-      <!-- Contact form -->
-      <form action="/contact-us" method="POST" style="width: max-content">
-        <fieldset>
-          <legend><h2>แนะนำหรือติชม</h2></legend>
-          <label for="fname-lname"><strong>ชื่อ - นามสกุล :</strong></label>
-          <br />
-          <input
-            type="text"
-            name="fname-lname"
-            id="fname-lname"
-            placeholder="กรอกชื่อ - นามสกุล"
-            required
-            style="width: 90%"
-          />
-          <br />
-          <br />
-          <fieldset style="width: 85%">
-            <legend>เพศ :</legend>
-            <label for="gender"></label>
-            <input type="radio" name="gender" id="male" />ชาย
-            <input type="radio" name="gender" id="female" />หญิง
-            <input type="radio" name="gender" id="other" />อื่นๆ
-          </fieldset>
-          <br />
-          <label for="email"><strong>อีเมล :</strong></label>
-          <br />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="กรอกอีเมล"
-            required
-            style="width: 90%"
-          />
-          <br />
-          <br />
-          <label for="tel"><strong>โทรศัพท์ :</strong></label>
-          <br />
-          <input
-            type="tel"
-            name="tel"
-            id="tel"
-            placeholder="กรอกเบอร์ติดต่อ"
-            style="width: 90%"
-          />
-          <br />
-          <br />
-          <label for="topic"><strong>หัวข้อ :</strong></label>
-          <br />
-          <select style="width: 90%" required>
-            <option value="contact">-- เลือกหัวข้อติดต่อ --</option>
-            <option value="suggestions">แนะนำติชม</option>
-            <option value="inquire">สอบถามข้อมูล</option>
-          </select>
-          <br />
-          <br />
-          <legend for="text-us"><strong>ข้อความ :</strong></legend>
-          <textarea name="text-us" id="text-us" rows="7" cols="90"></textarea>
-          <br />
-          <input
-            type="checkbox"
-            name="accepted"
-            id="accepted"
-            required
-          />อนุญาตให้ใช้ข้อมูลส่วนบุคคลในการติดต่อกลับ
-          และเพื่อนำข้อมูลไปปรับปรุงด้านการบริการของบริษัท
-        </fieldset>
-        <input type="submit" value="ส่งข้อมูล" />
-        <input type="reset" value="ยกเลิก" />
-      </form>
+        <!-- Contact-Header -->
+        <section id="contact-header-section">
+          <div class="container">
+            <div class="contact-header-box">
+              <div class="contact-header-img">
+                <img src="images/contact.jpg" alt="contact" width="100%" />
+              </div>
 
-      <!-- Company address -->
-      <section id="company-address">
-        <h2>บริษัท ปตท. น้ำมันและการค้าปลีก จำกัด (มหาชน)</h2>
-        <nav>
-          <a href="https://maps.app.goo.gl/WdJpXuSChPQe5jfM9" target="_blank"
-            >ค้นหาสาขา</a
-          >
-          <br />
-          <!-- Embed Google Maps -->
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d32225.983131252888!2d100.55283445495202!3d13.713856987046741!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f02efc9aacb%3A0x574488ae0bbe939!2sCaf%C3%A9%20Amazon!5e0!3m2!1sen!2sth!4v1765025481949!5m2!1sen!2sth"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </nav>
-        <p><strong>ที่อยู่ : </strong>128 ถ.สุนทรโกษา คลองเตย กรุงเทพมหานคร</p>
-        <p><strong>เบอร์โทร : </strong>012-345-6789</p>
-        <p><strong>อีเมล : </strong>amazon@not.only.cafe.com</p>
+              <div class="contact-header-text-box">
+                <div class="contact-header-text">
+                  <p>
+                    <strong
+                      >บริษัท ปตท. น้ำมันและการค้าปลีก จำกัด (มหาชน)</strong
+                    >
+                  </p>
+                  <p>
+                    ธุรกิจคาเฟ่อเมซอน 555/2 ศูนย์เอนเนอร์ยี่คอมเพล็กซ์ อาคารบี
+                    ชั้นที่ 12
+                  </p>
+                  <p>ถนนวิภาวดีรังสิต แขวงจตุจักร เขตจตุจักร กรุงเทพฯ 10900</p>
+                  <p>เลขประจำตัวผู้เสียภาษี : 0107561000013</p>
+                  <p><strong>แนะนำสินค้าและบริการ</strong></p>
+                  <p>Contact Center</p>
+                  <p><strong>1365</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Form -->
+        <div id="contact-form-section">
+          <div class="container">
+            <div class="contact-form-box">
+              <form
+                action="contact.html"
+                method="POST"
+                style="width: max-content"
+              >
+                <div class="contact-form-content">
+                  <fieldset>
+                    <legend><h2>แนะนำหรือติชม</h2></legend>
+                    <label for="fname-lname"
+                      ><strong>ชื่อ - นามสกุล :</strong></label
+                    >
+                    <input
+                      type="text"
+                      name="fname-lname"
+                      id="fname-lname"
+                      placeholder="กรอกชื่อ - นามสกุล"
+                      required
+                      style="width: 100%"
+                    />
+                    <br />
+                    <label for="gender"><strong>เพศ :</strong></label
+                    ><br />
+                    <input type="radio" name="gender" id="male" />ชาย
+                    <input type="radio" name="gender" id="female" />หญิง
+                    <input type="radio" name="gender" id="other" />อื่นๆ
+                    <br />
+                    <label for="email"><strong>อีเมล :</strong></label>
+                    <br />
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="กรอกอีเมล"
+                      required
+                      style="width: 100%"
+                    />
+                    <br />
+                    <label for="tel"><strong>โทรศัพท์ :</strong></label>
+                    <br />
+                    <input
+                      type="tel"
+                      name="tel"
+                      id="tel"
+                      placeholder="กรอกเบอร์ติดต่อ"
+                      style="width: 100%"
+                    />
+                    <br />
+                    <label for="topic"><strong>หัวข้อ :</strong></label>
+                    <br />
+                    <select style="width: 100%" required>
+                      <option value="">-- เลือกหัวข้อติดต่อ --</option>
+                      <option value="suggestions">แนะนำติชม</option>
+                      <option value="inquire">สอบถามข้อมูล</option>
+                    </select>
+                    <label for="text-us"><strong>ข้อความ :</strong></label>
+                    <br />
+                    <textarea
+                      name="text-us"
+                      id="text-us"
+                      rows="7"
+                      cols="100%"
+                    ></textarea>
+                    <br />
+                    <input
+                      type="checkbox"
+                      name="accepted"
+                      id="accepted"
+                      required
+                    />อนุญาตให้ใช้ข้อมูลส่วนบุคคลในการติดต่อกลับ
+                    และเพื่อนำข้อมูลไปปรับปรุงด้านการบริการของบริษัท
+                  </fieldset>
+                </div>
+
+                <div class="contact-form-actions">
+                  <button><input type="submit" value="ส่งข้อมูล" /></button>
+                  <button><input type="reset" value="ยกเลิก" /></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Company address -->
+        <section id="company-address-section">
+          <div class="container">
+            <h2>บริษัท ปตท. น้ำมันและการค้าปลีก จำกัด (มหาชน)</h2>
+            <a href="https://maps.app.goo.gl/WdJpXuSChPQe5jfM9" target="_blank"
+              >ค้นหาสาขา</a
+            >
+            <nav>
+              <br />
+              <!-- Embed Google Maps -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d32225.983131252888!2d100.55283445495202!3d13.713856987046741!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f02efc9aacb%3A0x574488ae0bbe939!2sCaf%C3%A9%20Amazon!5e0!3m2!1sen!2sth!4v1765025481949!5m2!1sen!2sth"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </nav>
+            <p>
+              <strong>ที่อยู่ : </strong>128 ถ.สุนทรโกษา คลองเตย กรุงเทพมหานคร
+            </p>
+            <p><strong>เบอร์โทร : </strong>012-345-6789</p>
+            <p><strong>อีเมล : </strong>amazon@not.only.cafe.com</p>
+          </div>
+        </section>
       </section>
     </main>
 
     <footer>
-      <ul>
-        <li><a href="/index.html">หน้าแรก</a></li>
-        <li><a href="/about.html">เกี่ยวกับ</a></li>
-        <li><a href="/services.html">บริการ</a></li>
-        <li><a href="/contact.html">ติดต่อ</a></li>
-      </ul>
-      <p>
+      <span>
         &copy; สงวนสิทธิ์ พ.ศ. 2568 บริษัท ปตท. น้ำมันและการค้าปลีก จำกัด
         (มหาชน)
-      </p>
+      </span>
     </footer>
   </body>
 </html>

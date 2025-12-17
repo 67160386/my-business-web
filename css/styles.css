@@ -143,6 +143,13 @@ img {
     position: relative;
 }
 
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .back-to-top {
     display: flex;
     position: fixed;
@@ -241,29 +248,6 @@ img {
     }
 }
 
-#promotion-section {
-
-    .container {
-
-        table {
-            border: 1px solid black;
-            width: 100%;
-            height: 150px;
-            text-align: center;
-
-            thead th {
-                background-color: var(--darkyellow);
-                color: var(--softwhite);
-                height: 50px;
-            }
-
-            tbody td {
-                background-color: var(--softgray);
-            }
-        }
-    }
-}
-
 /* ID Selector */
 
 #header {
@@ -273,8 +257,9 @@ img {
     align-items: center;
     justify-content: center;
     background-color: var(--darkergreen);
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 400;
+    color: var(--softwhite);
 }
 
 #footer {}
@@ -626,6 +611,117 @@ img {
     }
 }
 
+#promotion-section {
+
+    .container {
+
+        table {
+            border: 1px solid black;
+            width: 100%;
+            height: 150px;
+            text-align: center;
+
+            thead th {
+                background-color: var(--darkyellow);
+                color: var(--softwhite);
+                height: 50px;
+            }
+
+            tbody td {
+                background-color: var(--softgray);
+            }
+        }
+    }
+}
+
+#contact-header-section {
+
+    .contact-header-box {
+        display: flex;
+
+        .contact-header-img {
+            width: 50%;
+            text-align: center;
+        }
+
+        .contact-header-text-box {
+            /* width: 50%; */
+            text-align: center;
+
+            .contact-header-text {
+                padding-top: 15%;
+                padding-left: 3rem;
+
+            }
+        }
+    }
+}
+
+#contact-form-section {
+    background-image: url(../images/bg-contact-us.jpg);
+
+    .container {
+
+        .contact-form-box {
+            display: flex;
+            justify-content: center;
+
+            form {
+                outline: none;
+                padding: 1.5rem;
+                border-radius: 5%;
+                background-color: var(--softgray);
+
+                fieldset {
+                    border: none;
+                }
+
+                legend {
+                    padding-left: 1rem;
+                }
+
+                label {
+                    padding-left: 1rem;
+                }
+
+                input {
+                    border: none;
+                    padding: 1rem;
+                }
+
+                textarea {
+                    border: none;
+                }
+
+                select {
+                    border: none;
+                    padding: 1rem;
+                }
+
+                input[type="radio"] {
+                    margin-left: 1rem;
+
+                }
+
+                input[type="checkbox"] {
+                    margin: 0 1rem;
+                }
+
+                input[type="submit"],
+                input[type="reset"] {
+                    padding: 0;
+                    background: none;
+                }
+
+                button {
+                    padding: 1rem;
+                }
+            }
+
+        }
+    }
+}
+
 .services {
 
     .service-card {
@@ -762,6 +858,14 @@ header:hover {
     transform: translateY(-2px);
 }
 
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+
+
 
 /* ========================
  COMPONENTS (HEADER, NAV, CARD, etc.)
@@ -791,10 +895,6 @@ footer {
     background-color: var(--darkergreen);
 }
 
-form {
-    display: flex;
-    /* flex-direction: column; */
-}
 
 /* ========================
  RESPONSIVE / MEDIA QUERIES
@@ -1089,7 +1189,7 @@ form {
                                     }
 
                                     p {
-                                        font-size: 0.4rem;
+                                        font-size: 0.3rem;
                                     }
                                 }
 
@@ -1337,7 +1437,7 @@ form {
             .drink-text {
                 position: absolute;
                 top: 30px;
-                left: 190px;
+                left: 165px;
             }
         }
     }
@@ -1363,6 +1463,30 @@ form {
                     padding-left: 8px;
                 }
             }
+        }
+    }
+
+    #promotion-section {
+
+        tbody td {
+            font-size: 0.6rem;
+        }
+    }
+
+    #contact-header-section {
+
+        .contact-header-box {
+
+            .contact-header-img {}
+
+            .contact-header-text {}
+        }
+    }
+
+    #contact-form-section {
+
+        form {
+            flex-direction: column;
         }
     }
 }
