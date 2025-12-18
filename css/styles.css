@@ -19,14 +19,14 @@
 :root {
     --darkgreen: #436152;
     /* primary */
-    --darkyellow: rgb(151, 112, 53);
+    --softwhite: #ffffff;
     /* secondary */
-    --darkergreen: rgb(43, 70, 53);
+    --darkergreen: #2b4635;
     /* accent */
-    --softwhite: rgb(255, 255, 255);
+    --darkyellow: #977035;
     /* neutral */
-    --softgray: rgb(244, 242, 241);
-    --darker: rgb(38, 53, 46);
+    --softgray: #f4f2f1;
+    --darker: #26352e;
 }
 
 /* ========================
@@ -633,6 +633,11 @@ img {
             tbody td {
                 background-color: var(--softgray);
             }
+
+            td:first-child {
+                color: var(--darkgreen);
+                text-shadow: 1px 1px;
+            }
         }
     }
 }
@@ -872,7 +877,6 @@ select:focus,
 textarea:focus {
     outline: none;
 }
-
 
 
 
@@ -1175,6 +1179,7 @@ footer {
                             .hero-text {
                                 position: absolute;
                                 top: -45px;
+
                                 h1 {
                                     span {
                                         font-size: 0.8rem;
