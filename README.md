@@ -9,16 +9,18 @@
 
 ## File structure
 
+```
 my-business-web/
 ├── index.html
 ├── about.html
 ├── services.html
 ├── contact.html
 ├── css/
-│ └── styles.css
+│   └── styles.css
 ├── Pictures/
-│ └── ...
+│   └── ...
 └── README.md
+```
 
 ## CSS Implementation
 
