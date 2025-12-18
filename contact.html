@@ -77,90 +77,84 @@
         </section>
 
         <!-- Contact Form -->
-        <div id="contact-form-section">
+        <section id="contact-form-section">
           <div class="container">
-            <div class="contact-form-box">
-              <form
-                action="contact.html"
-                method="POST"
-                style="width: max-content"
-              >
-                <div class="contact-form-content">
-                  <fieldset>
-                    <legend><h2>แนะนำหรือติชม</h2></legend>
-                    <label for="fname-lname"
-                      ><strong>ชื่อ - นามสกุล :</strong></label
-                    >
+            <section class="contact-form-box">
+              <form action="#" method="POST">
+                <fieldset>
+                  <legend>แนะนำหรือติชม</legend>
+
+                  <div class="form-group">
+                    <label for="fName-lName">ชื่อ - นามสกุล :</label>
                     <input
                       type="text"
-                      name="fname-lname"
-                      id="fname-lname"
+                      id="fName-lName"
+                      name="fName-lName"
                       placeholder="กรอกชื่อ - นามสกุล"
-                      required
-                      style="width: 100%"
+                      required=""
                     />
-                    <br />
-                    <label for="gender"><strong>เพศ :</strong></label
-                    ><br />
-                    <input type="radio" name="gender" id="male" />ชาย
-                    <input type="radio" name="gender" id="female" />หญิง
-                    <input type="radio" name="gender" id="other" />อื่นๆ
-                    <br />
-                    <label for="email"><strong>อีเมล :</strong></label>
-                    <br />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">อีเมล :</label>
                     <input
                       type="email"
-                      name="email"
                       id="email"
+                      name="email"
                       placeholder="กรอกอีเมล"
-                      required
-                      style="width: 100%"
+                      required=""
                     />
-                    <br />
-                    <label for="tel"><strong>โทรศัพท์ :</strong></label>
-                    <br />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="phone">โทรศัพท์ :</label>
                     <input
                       type="tel"
-                      name="tel"
                       id="tel"
+                      name="tel"
                       placeholder="กรอกเบอร์ติดต่อ"
-                      style="width: 100%"
                     />
-                    <br />
-                    <label for="topic"><strong>หัวข้อ :</strong></label>
-                    <br />
-                    <select style="width: 100%" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="topic">หัวข้อ :</label>
+                    <select id="topic" name="topic" required="">
                       <option value="">-- เลือกหัวข้อติดต่อ --</option>
                       <option value="suggestions">แนะนำติชม</option>
                       <option value="inquire">สอบถามข้อมูล</option>
                     </select>
-                    <label for="text-us"><strong>ข้อความ :</strong></label>
-                    <br />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="message">ข้อความ :</label>
                     <textarea
-                      name="text-us"
-                      id="text-us"
-                      rows="7"
-                      cols="100%"
+                      id="message"
+                      name="message"
+                      rows="5"
+                      required
                     ></textarea>
-                    <br />
+                  </div>
+
+                  <div class="checkbox-group">
                     <input
                       type="checkbox"
-                      name="accepted"
-                      id="accepted"
-                      required
+                      id="agree"
+                      name="agree"
+                      required=""
                     />อนุญาตให้ใช้ข้อมูลส่วนบุคคลในการติดต่อกลับ
-                    และเพื่อนำข้อมูลไปปรับปรุงด้านการบริการของบริษัท
-                  </fieldset>
-                </div>
+                      และเพื่อนำข้อมูลไปปรับปรุงด้านการบริการของบริษัท
 
-                <div class="contact-form-actions">
-                  <button><input type="submit" value="ส่งข้อมูล" /></button>
-                  <button><input type="reset" value="ยกเลิก" /></button>
+                  </div>
+                </fieldset>
+
+                <div class="form-actions">
+                  <button type="submit">ส่งข้อมูล</button>
+                  <button type="reset">ยกเลิก</button>
                 </div>
               </form>
-            </div>
+            </section>
           </div>
-        </div>
+        </section>
 
         <!-- Company address -->
         <section id="company-address-section">
@@ -170,7 +164,6 @@
               >ค้นหาสาขา</a
             >
             <nav>
-              <br />
               <!-- Embed Google Maps -->
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d32225.983131252888!2d100.55283445495202!3d13.713856987046741!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f02efc9aacb%3A0x574488ae0bbe939!2sCaf%C3%A9%20Amazon!5e0!3m2!1sen!2sth!4v1765025481949!5m2!1sen!2sth"
